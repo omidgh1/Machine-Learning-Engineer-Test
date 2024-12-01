@@ -16,8 +16,6 @@ Machine-Learning-Engineer-test/
    - ├── requirements.txt
    - ├── test.json
    - ├── random_forest_model.pkl (you can find this file in the following link (because the size of it is more than 100 MB and there is not enough storage in my Github, so you can download it form my google drive [here](https://drive.google.com/file/d/1O6fCjtFeogz53AyJHZzc-qj5bW044ThD/view?usp=sharing/))
- 
-   - t the API [here](https://fastapi-housing-predictor-981103843427.europe-west1.run.app/predict/).
 
 ### Files and Their Descriptions
 
