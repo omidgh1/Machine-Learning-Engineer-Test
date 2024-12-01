@@ -1,0 +1,24 @@
+data:
+  path: "housing.csv"
+preprocessing:
+  outlier_factor: 1.5
+  imputation_strategy: "median"
+training:
+  test_size: 0.2
+  random_state: 42
+tuning:
+  tuning: False
+  parameters:
+    n_estimators: [ 100, 200, 300 ]
+    max_depth: [ 10, 20, null ]
+    min_samples_split: [ 2, 10 ]
+    min_samples_leaf: [ 1, 2 ]
+    max_features: [ "auto", "sqrt" ]
+model:
+  type: "RandomForestRegressor"
+  hyperparameters:
+    n_estimators: 200
+    max_depth: 30
+    min_samples_split: 2
+    min_samples_leaf: 1
+    max_features: "sqrt"

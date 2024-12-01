@@ -1,0 +1,23 @@
+[{
+  "longitude": -124.23,
+  "latitude": 36.88,
+  "housing_median_age": 45,
+  "total_rooms": 960,
+  "total_bedrooms": 146,
+  "population": 328,
+  "households": 128,
+  "median_income": 8.3252,
+  "ocean_proximity": "NEAR BAY"
+},
+{
+  "longitude": -122.23,
+  "latitude": 37.88,
+  "housing_median_age": 41,
+  "total_rooms": 880,
+  "total_bedrooms": 129,
+  "population": 322,
+  "households": 126,
+  "median_income": 8.3252,
+  "ocean_proximity": "NEAR BAY"
+}
+]
