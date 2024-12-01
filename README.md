@@ -11,7 +11,11 @@ Machine-Learning-Engineer-test/
 - ├── GeoDataAnalysis.py
 - ├── app/
    - ├── Dockerfile
-   - ├── main.py │ ├── preprocessing.py │ ├── requirements.txt │ ├── test.json │ ├── random_forest_model.pkl
+   - ├── main.py
+   - ├── preprocessing.py
+   - ├── requirements.txt
+   - ├── test.json
+   - ├── random_forest_model.pkl
 
 ### Files and Their Descriptions
 
