@@ -91,4 +91,4 @@ Given more time, the project could be extended with:
 
 ---
 
-For more information, please don’t hesitate to contact the project owner.
+For more information, please don’t hesitate to contact me.
