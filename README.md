@@ -4,8 +4,14 @@ This project demonstrates a complete pipeline for housing price prediction, incl
 
 ## Project Structure
 Machine-Learning-Engineer-test/  
-&nbsp&nbsp├── Analysis_modeling.ipynb 
-   ├── config.yaml ├── housing_price_modelling.py ├── housing.csv ├── GeoDataAnalysis.py ├── app/ │ ├── Dockerfile │ ├── main.py │ ├── preprocessing.py │ ├── requirements.txt │ ├── test.json │ ├── random_forest_model.pkl
+- ├── Analysis_modeling.ipynb
+- ├── config.yaml
+- ├── housing_price_modelling.py
+- ├── housing.csv
+- ├── GeoDataAnalysis.py
+- ├── app/
+   - ├── Dockerfile
+   - ├── main.py │ ├── preprocessing.py │ ├── requirements.txt │ ├── test.json │ ├── random_forest_model.pkl
 
 ### Files and Their Descriptions
 
