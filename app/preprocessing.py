@@ -9,7 +9,6 @@ class DataPreprocessor:
     def __init__(self, outlier_factor=1.5, imputation_strategy='mean', verbose=True):
         """
         Data Preprocessor for feature engineering, outlier handling, and scaling.
-        :param quantitative: List of quantitative column names.
         :param outlier_factor: Multiplier for the IQR in outlier detection.
         :param imputation_strategy: Strategy for filling missing values ('mean' or 'median').
         :param verbose: If True, enable logging for debugging.
