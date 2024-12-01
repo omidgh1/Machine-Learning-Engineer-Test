@@ -15,7 +15,7 @@ Machine-Learning-Engineer-test/
    - ├── preprocessing.py
    - ├── requirements.txt
    - ├── test.json
-   - ├── random_forest_model.pkl
+   - ├── random_forest_model.pkl (you can find this file in the following link (because the size of it is more than 100 MB and there is not enough storage in my Github: )
 
 ### Files and Their Descriptions
 
