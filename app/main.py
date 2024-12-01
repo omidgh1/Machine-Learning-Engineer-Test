@@ -9,7 +9,6 @@ import os
 
 app = FastAPI()
 
-# Load the trained model
 model = joblib.load("random_forest_model.pkl")
 
 
