@@ -1,5 +1,4 @@
 import logging
-
 from sklearn.metrics import mean_absolute_error, r2_score
 from sklearn.model_selection import train_test_split, GridSearchCV
 import joblib
@@ -17,27 +16,19 @@ def load_config(config_path):
     with open(config_path, "r") as file:
         return yaml.safe_load(file)
 
-def save_model(model, filepath):
-    """
-    Save a model to a file.
-    """
-    joblib.dump(model, filepath)
-    logging.info(f"Model saved to {filepath}")
-
-
-def load_model(filepath):
-    """
-    Load a model from a file.
-    """
-    return joblib.load(filepath)
-
 def train_model(X_train, y_train, type, hyperparameters):
-    model = eval(type)()  # Dynamically create model instance
+    """
+    Train model
+    """
+    model = eval(type)()
     model.set_params(**hyperparameters)
     model.fit(X_train, y_train)
     return model
 
 def evaluate_model(model, X_train, y_train, X_test, y_test):
+    """
+    Perform model evaluation , R2 and MAE
+    """
     metrics = {}
 
     y_pred_train = model.predict(X_train)
@@ -58,6 +49,13 @@ def hyperparameter_tuning(X_train, y_train, cv=5, config=None):
     grid_search = GridSearchCV(model, config.get('parameters'), cv=cv, scoring='neg_mean_absolute_error', n_jobs=-1, verbose=1)
     grid_search.fit(X_train, y_train)
     return grid_search.best_params_
+
+def save_model(model, filepath):
+    """
+    Save a model to a file.
+    """
+    joblib.dump(model, filepath)
+    logging.info(f"Model saved to {filepath}")
 
 def main(config_path):
     config = load_config(config_path)
